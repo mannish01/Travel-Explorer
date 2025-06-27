@@ -323,7 +323,7 @@
     </p>
      <p class="mb-0 text-white">© 2023 Travel Explorer. All rights reserved.</p>
   </footer>
-  <script src="app.js"></script>
+  <!-- <script src="app.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
