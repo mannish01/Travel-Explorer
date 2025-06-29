@@ -17,7 +17,7 @@ $result = $conn->query("SELECT * FROM contact_messages ORDER BY id DESC");
 
 <h2 class="mb-4">Contact Messages</h2>
 
-<table class="table table-bordered table-hover">
+<table class="table table-bordered table-hover my-5">
   <thead class="table-dark">
     <tr>
       <th>ID</th>

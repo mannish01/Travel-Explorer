@@ -40,7 +40,7 @@ $result = $conn->query("SELECT * FROM newsletter_emails ORDER BY id DESC");
           <?php else: ?>
             <span class="text-muted">Blocked</span>
           <?php endif; ?>
-          <a href="delete_subscriber.php?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Delete this subscriber?')">Delete</a>
+          <a href="delete_subscriber.php?id=<?= $row['id'] ?>" class="btn btn-outline-danger ms-2" onclick="return confirm('Delete this subscriber?')">Delete</a>
         </td>
       </tr>
     <?php endwhile; ?>
