@@ -28,6 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Admin Login - Travel Explorer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
 </head>
 <body class="bg-light">
 
@@ -36,19 +37,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="col-md-5">
       <div class="card shadow">
         <div class="card-body">
-          <h3 class="card-title text-center mb-4">Admin Login</h3>
-
+          <h3 class="card-title text-center mb-4 fs-1 fw-bold">Admin Login</h3>
           <?php if (!empty($error)): ?>
             <div class="alert alert-danger"><?= $error ?></div>
           <?php endif; ?>
 
           <form method="post">
             <div class="mb-3">
-              <label for="email" class="form-label">Admin Email</label>
+              <label for="email" class="form-label fs-5">Email</label>
               <input type="email" class="form-control" id="email" name="email" required placeholder="Enter email">
             </div>
             <div class="mb-3">
-              <label for="password" class="form-label">Admin Password</label>
+              <label for="password" class="form-label fs-5">Password</label>
               <input type="password" class="form-control" id="password" name="password" required placeholder="Enter password">
             </div>
             <button type="submit" class="btn btn-primary w-100">Login</button>

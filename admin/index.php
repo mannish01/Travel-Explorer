@@ -26,7 +26,7 @@ $conn->close();
 <?php include('includes/header.php'); ?>
 
 <h2 class="mb-4">Dashboard</h2>
-
+<div class="container">
 <div class="row">
   <div class="col-md-6 mb-4">
     <div class="card border-primary shadow h-100">
@@ -36,8 +36,7 @@ $conn->close();
         <a href="messages.php" class="btn btn-outline-primary">View Messages</a>
       </div>
     </div>
-  </div>
-
+</div>
   <div class="col-md-6 mb-4">
     <div class="card border-success shadow h-100">
       <div class="card-body">
@@ -47,6 +46,7 @@ $conn->close();
       </div>
     </div>
   </div>
+ </div>
 </div>
 
 <?php include('includes/footer.php'); ?>
