@@ -14,7 +14,23 @@
 </head>
 
 <body>
-  <!--Whatsapp support -->
+  <!-- Floating Chat Button -->
+<div id="chat-toggle" onclick="toggleChat()"><span class="fa-brands fa-whatsapp"></span></div>
+
+<!-- Chat Window -->
+<div id="chat-widget">
+  <div class="chat-header">
+    <span>Support Chat</span>
+    <button onclick="toggleChat()" class="close-btn"><span class="fa-solid fa-xmark"></span></button>
+  </div>
+  <div class="chat-body" id="chat-body">
+    <div class="bot-message">Hi there! How can I help you today?</div>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="user-input" placeholder="Type your message..." onkeydown="handleKey(event)" />
+    <button class="btn btn-outline-primary" onclick="sendMessage()"><img src="images/send-svgrepo-com.svg" class="send-icon" alt="Send"></button>
+  </div>
+</div>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top d-flex" data-nav>
