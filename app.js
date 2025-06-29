@@ -1,10 +1,10 @@
-let navBar = document.querySelector("nav");
 
-document.addEventListener("scroll", function (event) {
-  if ("scrollY" > 200) {
-    navBar.classList.add("shadow-sm");
+document.addEventListener('scroll',() => {
+  const nav = document.querySelector('nav')
+  if(window.screenY>0){
+    nav.classList.add('scrolled');
   } else {
-    navBar.classList.remove("shadow-sm");
+    nav.classList.remove('scrolled');
   }
 });
 
