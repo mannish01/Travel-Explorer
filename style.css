@@ -64,7 +64,7 @@ a {
 
 @media (max-width:768px) {
   .navbar {
-    width: 100%;
+    width: 100vw;
     left: 0;
     top: 0;
     border-radius: 0;
@@ -364,7 +364,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: calc(10rem + 1vw);
+  font-size: 7rem;
   color: rgba(214, 203, 203, 0.1);
   font-weight: bold;
   pointer-events: none;
