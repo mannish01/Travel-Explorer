@@ -2,7 +2,7 @@
 session_start();
 
 // Hardcoded login credentials (you can upgrade this later to database-based login)
-$admin_email = 'admin@travel.com';
+$admin_email = 'xyz@travel.com';
 $admin_password = '12345';
 
 $error = '';
