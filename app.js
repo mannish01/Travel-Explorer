@@ -76,3 +76,5 @@ function getBotResponse(userMsg) {
     return "I'm just a demo bot. Feel free to ask anything!";
   }
 }
+
+

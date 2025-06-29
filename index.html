@@ -15,59 +15,59 @@
 
 <body>
   <!-- Floating Chat Button -->
-<div id="chat-toggle" onclick="toggleChat()"><span class="fa-brands fa-whatsapp"></span></div>
+  <div id="chat-toggle" onclick="toggleChat()"><span class="fa-brands fa-whatsapp"></span></div>
 
-<!-- Chat Window -->
-<div id="chat-widget">
-  <div class="chat-header">
-    <span>Support Chat</span>
-    <button onclick="toggleChat()" class="close-btn"><span class="fa-solid fa-xmark"></span></button>
+  <!-- Chat Window -->
+  <div id="chat-widget">
+    <div class="chat-header">
+      <span>Support Chat</span>
+      <button onclick="toggleChat()" class="close-btn"><span class="fa-solid fa-xmark"></span></button>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <div class="bot-message">Hi there! How can I help you today?</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type your message..." onkeydown="handleKey(event)" />
+      <button class="btn btn-outline-primary" onclick="sendMessage()"><img src="images/send-svgrepo-com.svg"
+          class="send-icon" alt="Send"></button>
+    </div>
   </div>
-  <div class="chat-body" id="chat-body">
-    <div class="bot-message">Hi there! How can I help you today?</div>
-  </div>
-  <div class="chat-input">
-    <input type="text" id="user-input" placeholder="Type your message..." onkeydown="handleKey(event)" />
-    <button class="btn btn-outline-primary" onclick="sendMessage()"><img src="images/send-svgrepo-com.svg" class="send-icon" alt="Send"></button>
-  </div>
-</div>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top d-flex" data-nav>
     <div class="container">
       <!--LOGO-->
       <a class="navbar-brand logo" href="#"><img src="images/chooseUs/1.svg" alt=""></a>
-        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="toggler-icon top-bar"></span>
-          <span class="toggler-icon middle-bar"></span>
-          <span class="toggler-icon bottom-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold fs-4">
-            <li class="nav-item me-4">
-              <a class="nav-link text-white" aria-current="page" href="#hero">Home</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link text-white" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+      <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around me-5" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold fs-4">
+          <li class="nav-item me-4">
+            <a class="nav-link text-white" aria-current="page" href="#hero">Home</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link text-white" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
+    </div>
   </nav>
 
   <!-- hero Section -->
   <section id="hero" class="container-fluid">
-    <div class="card py-4" id="hero-card"">
-        <div class=" card-body">
+    <div class="card py-0 py-md-4" id="hero-card"">
+     <div class=" card-body">
       <h5 class="card-title text-uppercase mb-2 text-white">Explore the world with us</h5>
-      <h6 class=" card-subtitle mb-2 text-center mb-5 text-white">Lorem ipsum dolor sit amet
-        consectetur
-        adipisicing elit. Quod, inventore.</h6>
-      <p class="card-text fs-5 text-white"> Lorem ipsum dolor sit, amet consectetur adipisicing elit Minima, sapiente
+      <h6 class=" card-subtitle text-center mb-5 text-white">Lorem ipsum dolor sit amet</h6>
+      <p class="card-text fs-md-5 text-white"> Lorem ipsum dolor sit, amet consectetur adipisicing elit Minima, sapiente
         Lorem Lorem ipsum dolor sit. <br> Lorem ipsum dolor sit amet consectetur, Lorem, ipsum dolor. adipisicing elit
         Magni, pariatur psum dolor <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit Dolorem, repellendus.
       </p>
@@ -80,7 +80,8 @@
 
   <section id="carousel-section" class="container-fluid pt-5 bg-dark">
     <!--Caption-->
-    <h2 class="text-center text-capitalize text-white">our top <br> <span class="cursive fw-bold ">destination</span></h2>
+    <h2 class="text-center text-capitalize text-white">our top <br> <span class="cursive fw-bold ">destination</span>
+    </h2>
     <p class="text-white pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam doloribus
       eveniet
       <br> asperiores laudantium dignissimos odit deserunt! Illum obcaecati mollitia ipsam.
@@ -171,8 +172,8 @@
 
   <section class="offer container-fluid py-5">
     <div class="container">
-    <h2 class="text-white ">Special offer, 20% discount <br> on a family booking</h2>
-    <button class="btn btn-warning contact-us-btn">Book Now</button>
+      <h2 class="text-white ">Special offer, 20% discount <br> on a family booking</h2>
+      <button class="btn btn-warning contact-us-btn">Book Now</button>
     </div>
   </section>
 
@@ -307,56 +308,58 @@
     <div class="container mb-5">
       <div class="row">
         <div class="col-md-6">
-          <h2 class="ps-4 mb-4 text-white" id="faq-title">Frequently Asked <br><span class="cursive">Questions</span></h2>
-          <p class="text-white  pe-5 ps-4 fs-5">Here are some common questions we receive from our clients. If you have any other
+          <h2 class="ps-4 mb-4 text-white" id="faq-title">Frequently Asked <br><span class="cursive">Questions</span>
+          </h2>
+          <p class="text-white  pe-5 ps-4 fs-5">Here are some common questions we receive from our clients. If you have
+            any other
             questions, feel free to contact us.</p>
         </div>
         <div class="col-md-6">
-       <div class="accordion" id="faqAccordion">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              ~ What services do you offer?
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-            data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-              We offer personalized travel packages, visa assistance, 24/7 support, and experienced tour guides.
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  ~ What services do you offer?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We offer personalized travel packages, visa assistance, 24/7 support, and experienced tour guides.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ~ How can I book a trip?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  You can book a trip by contacting us through our website or visiting our office.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ~ Do you provide travel insurance?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, we offer travel insurance options to ensure your trip is safe and secure.
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              ~ How can I book a trip?
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-            data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-              You can book a trip by contacting us through our website or visiting our office.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              ~ Do you provide travel insurance?
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-            data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-              Yes, we offer travel insurance options to ensure your trip is safe and secure.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
       </div>
     </div>
   </section>
@@ -405,9 +408,9 @@
       <div class="row text-center mx-3 mt-5" id="contact-info">
         <div class="col-md-4 text-center">
           <div class="c-content card">
-          <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
-          <h6>Address</h6>
-          <p>123 Travel St, Wanderlust City</p>
+            <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+            <h6>Address</h6>
+            <p>123 Travel St, Wanderlust City</p>
           </div>
         </div>
         <div class="col-md-4 text-center">
@@ -427,6 +430,27 @@
         </div>
       </div>
   </section>
+
+
+  <!--intro-->
+
+  <!-- YouTube Video Section -->
+<section class="video-section" id="video-section">
+  <!-- Centered Play Button -->
+   <h4 class="video-title">Know Us</h4>
+  <a href="#popup-video" class="play-button">&#9658;</a>
+</section>
+
+<!-- Video Popup Overlay (outside section) -->
+<div id="popup-video" class="video-popup">
+  <a href="#video-section" class="close-area">Close</a>
+  <iframe 
+    src="https://www.youtube.com/embed/V-bx4IhLtuE?autoplay=0&mute=0&controls=0&rel=0&modestbranding=1&fs=0"
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+</div>
+
   <!-- Map Section -->
   <!-- <section id="map" class="container-fluid mt-5">
     <h2 class="text-center pt-5">Find Us Here</h2>
@@ -441,8 +465,8 @@
   </section>   -->
 
   <!-- Footer -->
-   
- 
+
+
   <section class="footer container-fluid">
     <div class="container">
       <div class="row">

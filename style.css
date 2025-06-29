@@ -36,7 +36,6 @@ a {
   backdrop-filter: blur(2rem);
 }
 
-
 .logo img {
   width: 50px;
   height: 50px;
@@ -52,7 +51,6 @@ a {
   color:var(--dk-yellow) ;
 } */
 
-
 .nav-link {
   color: white;
   transition: all 0.1s ease-in;
@@ -62,26 +60,11 @@ a {
   border-bottom: 2px solid gold;
 }
 
-@media (max-width:768px) {
-  .navbar {
-    width: 100vw;
-    left: 0;
-    top: 0;
-    border-radius: 0;
-    box-shadow: none;
-    backdrop-filter: none;
-  }
-
-  .card-title {
-  font-size: calc(1.1rem + 1vw);
-  }
-}
-
 .navbar-toggler {
-  width:20px;
+  width: 20px;
   height: 20px;
-  position:relative;
-  transition:.5s ease-in-out;
+  position: relative;
+  transition: 0.5s ease-in-out;
 }
 
 .navbar-toggler,
@@ -89,37 +72,36 @@ a {
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
   border: 0;
-  outline:none;
-  box-shadow:  none;
+  outline: none;
+  box-shadow: none;
 }
 
 .navbar-toggler span {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .toggler-icon {
   position: absolute;
-  display:block;
-  height:3px;
+  display: block;
+  height: 3px;
   width: 100%;
   background-color: var(--dk-yellow);
   border-radius: 1px;
-  opacity:1;
-  left:0;
-  transform:rotate(0deg);
-  transition: .25s ease-in-out;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
 }
 
-
 .middle-bar {
-  margin-top:0px;
+  margin-top: 0px;
 }
 
 /* when navigation is clicked */
 
 .navbar-toggler .top-bar {
-  margin-top:0px;
+  margin-top: 0px;
   transform: rotate(135deg);
 }
 
@@ -147,7 +129,6 @@ a {
   margin-top: 20px;
   transform: rotate(0deg);
 }
-
 
 #hero {
   display: flex;
@@ -200,7 +181,7 @@ a {
 #carousel {
   width: 50%;
   margin: 0 auto;
-  border-radius: 20px;;
+  border-radius: 20px;
 }
 .carousel-item img {
   max-width: 100%;
@@ -234,7 +215,6 @@ a {
   font-size: 30px;
   color: gold;
   text-transform: uppercase;
-
 }
 .carousel-caption p {
   font-family: "Source Sans 3", sans-serif;
@@ -380,7 +360,7 @@ a {
 .cursive {
   font-family: "dancing script", cursive;
   font-size: calc(3rem + 1vw);
-  color:gold;
+  color: gold;
 }
 
 .img-container {
@@ -406,9 +386,9 @@ a {
   margin-top: 10px;
   text-transform: capitalize;
 }
-.stars{
+.stars {
   color: gold;
-  font-size:25px;
+  font-size: 25px;
 }
 
 .faq {
@@ -423,7 +403,7 @@ a {
 }
 
 .faq .container {
-  padding-top:80px;
+  padding-top: 80px;
 }
 #faq-title {
   font-family: "Josefin Sans", sans-serif;
@@ -449,7 +429,7 @@ a {
   color: black;
   font-family: "Josefin Sans", sans-serif;
   font-size: 18px;
-  margin-top:10px;
+  margin-top: 10px;
   padding: 20px;
   border-radius: 10px;
 }
@@ -489,14 +469,18 @@ a {
 
 #contact h2 {
   position: relative;
-  font-family: 'dancing script', cursive;
+  font-family: "dancing script", cursive;
   font-size: 70px;
   color: gold;
   text-transform: capitalize;
   margin-bottom: 40px;
 }
 #contact {
-  background: linear-gradient(90deg,rgba(5, 5, 5, 0.93) 37%, rgba(242, 218, 0, 1) 99%);
+  background: linear-gradient(
+    90deg,
+    rgba(5, 5, 5, 0.93) 37%,
+    rgba(242, 218, 0, 1) 99%
+  );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -547,7 +531,7 @@ a {
   opacity: 0.1;
 }
 
-.icon{
+.icon {
   color: gold;
   font-size: 35px;
   margin: 0 10px;
@@ -611,7 +595,6 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-
 .newsletter {
   background-color: transparent;
 }
@@ -648,15 +631,16 @@ a {
   font-family: "Source Sans 3", sans-serif;
 }
 
-.newsletter form input::-ms-input-placeholder { /* Edge 12 -18 */
-   color: white;
+.newsletter form input::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: white;
   opacity: 1; /* Firefox */
   font-size: 20px;
   font-weight: 400;
   font-family: "Source Sans 3", sans-serif;
 }
 
-.newsletter form button{
+.newsletter form button {
   background-color: var(--dk-yellow);
   color: black;
   font-family: "Josefin Sans", sans-serif;
@@ -668,7 +652,6 @@ a {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-
 
 /* footer */
 
@@ -715,7 +698,7 @@ a {
   position: fixed;
   bottom: 30px;
   right: 20px;
-  background-color: #0078D7;
+  background-color: #0078d7;
   color: white;
   font-size: 24px;
   width: 60px;
@@ -730,7 +713,7 @@ a {
 }
 
 #chat-toggle:hover {
-  background-color: #0056A3;
+  background-color: #0056a3;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
 
@@ -755,10 +738,9 @@ a {
   z-index: 1000;
 }
 
-
 /* Chat Header */
 .chat-header {
-  background: linear-gradient(to right, #0078D7, #0056A3);
+  background: linear-gradient(to right, #0078d7, #0056a3);
   font-size: 18px;
   color: white;
   padding: 12px 16px;
@@ -783,7 +765,8 @@ a {
   background-color: #f9f9f9;
 }
 
-.bot-message, .user-message {
+.bot-message,
+.user-message {
   margin: 8px 0;
   max-width: 80%;
   padding: 10px 14px;
@@ -798,7 +781,7 @@ a {
 }
 
 .user-message {
-  background-color: #0078D7;
+  background-color: #0078d7;
   color: white;
   align-self: flex-end;
   margin-left: auto;
@@ -833,4 +816,131 @@ a {
 .send-icon {
   width: 30px;
   /* height: 24px; */
+}
+
+/* intro */
+
+
+/* SECTION: Thumbnail Background Area */
+  .video-section {
+    position: relative;
+    background-image: url('https://img.youtube.com/vi/V-bx4IhLtuE/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 50vh; /* or any section height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .play-button {
+    background-color: gold;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(238, 222, 222);
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s;
+    z-index: 1;
+  }
+
+  .video-title{
+    position: absolute;
+    top:10%;
+    font-size: 80px;
+   font-family: "dancing script", cursive;
+  }
+  .play-button:hover {
+    background-color: rgb(215, 14, 14);
+  }
+
+  /* POPUP VIDEO OVERLAY */
+  .video-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  .video-popup:target {
+    display: flex;
+  }
+
+  .video-popup iframe {
+    width: 90%;
+    max-width: 960px;
+    height: 54vw;
+    max-height: 540px;
+    border: none;
+    z-index: 2;
+  }
+
+  .close-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    z-index: 1;
+  }
+  
+  @media (max-width: 768px) {
+  .navbar {
+    width: 100vw;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  #hero-card{
+    margin-top:200px;
+    padding:none;
+  }
+
+  #hero-card h5 {
+    font-size: 1.5rem;
+    margin-top:none;
+    padding-top:none;
+    text-align: center;
+  }
+
+  .card-subtitle {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+
+  .card-text {
+    font-size: 16px !important;
+    margin-top: -30px;
+  }
+
+  #header-btn{
+    font-size: 14px;
+    width:200px;
+    margin-left: -5px;
+  }
+
+  .play-button {
+    width:50px;
+    height:50px;
+    font-size: 25px;
+  }
+
+  #carousel{
+    width:100%;
+  }
+
 }
